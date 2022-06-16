@@ -39,7 +39,7 @@ module.exports = {
         }, process.env.JWT_PRIVATE_KEY || 'Apalah', {
             expiresIn: '1h'
         });
-
+        console.log(res.body);
         res.status(201).json({
             id: user.id,
             email: user.email,
